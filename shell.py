@@ -3,7 +3,7 @@ import lang
 while True:
     text = input('> ')
     if text.strip() == "": continue
-    result, error = lang.run('program1.lang', text)
+    result, error = lang.run('<stdin>', text)
 
     if error: 
         print(error.as_string())
